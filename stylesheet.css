@@ -1,0 +1,293 @@
+/* latin-ext */
+:root {
+  /* 修改主色调 */
+  --primary-color: #3498db;
+  /* 修改次要色调 */
+  --secondary-color: #2ecc71;
+  /* 修改背景色 */
+  --background-color: #f9f9f9;
+  /* 修改文字颜色 */
+  --text-color: #333;
+  /* 添加砖红色 */
+  --brick-red: #a20a0a;
+  /* 添加绿色 */
+  --luojia-green: #0d5d0d;
+  /* 添加红色 */
+  --pku-red: #880606;
+} 
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+.papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.colored-box {
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.polyu-red {
+  color: var(--brick-red);
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.whu-green{
+  color: var(--luojia-green);
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.pku-red {
+  color: var(--pku-red);
+  font-weight: bold;
+  font-size: inherit;
+}
+
+/* 姓名标题样式 */
+.name-header {
+    margin-bottom: 1rem;
+    text-align: left;  /* 居中显示 */
+}
+
+/* 姓名标题样式修改 */
+.name-header h1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.section-header h2 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-weight: bold;
+}
+/* 调整原有profile-section的样式 */
+.profile-section {
+    margin-top: 0.5rem;
+}
+
+/* 增大个人信息部分的字体大小 */
+.bio {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+/* 确保bio内的所有元素继承字体大小 */
+.bio span, 
+.bio a, 
+.bio strong {
+    font-size: inherit;
+}
+
+/* 调整profile-section内部间距 */
+.profile-section p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+/* 联系方式样式 */
+.contact-links {
+    margin-top: 1.2rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.contact-item:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.contact-icon {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* 修改section-header样式，移除底部边框 */
+.section-header {
+    padding-bottom: 8px;               
+    margin-bottom: 0;                 /* 减少间距，避免过大的空白 */
+    width: 100%;                     
+}
+
+/* 修改分隔线样式，与contact-links使用相同的样式 */
+.section-divider {
+    border: 0;
+    height: 1px;
+    background-color: #eaeaea;  /* 使用与contact-links相同的颜色 */
+    margin: 0 0 16px 0;
+    width: 100%;
+}
+
+/* 大学logo样式 */
+.university-logo {
+  height: 1.1em;  /* 与文本行高匹配 */
+  width: auto;    /* 保持原始宽高比 */
+  vertical-align: middle;  /* 垂直居中对齐 */
+  margin-right: 4px;  /* 与文本保持适当间距 */
+  margin-bottom: 3px; /* 微调垂直位置 */
+}
+
+/* 修改分隔线样式，减少底部边距 */
+div[style="border-top: 1px solid #eaeaea; margin-bottom: 16px;"] {
+    margin-bottom: 0 !important;  /* 覆盖内联样式 */
+}
+
+/* 添加这个类给论文表格 */
+.papers-table {
+    margin-top: -16px;  /* 负边距抵消上方表格的间距 */
+} 

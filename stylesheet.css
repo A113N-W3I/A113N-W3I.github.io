@@ -183,6 +183,15 @@ span.highlight {
   font-size: inherit;
 }
 
+.vclab-green a {
+    color: inherit; /* Inherits the green color from parent */
+}
+
+/* Or you can set the exact color you want */
+.vclab-green a {
+    color: #00a651; /* Adjust to match your desired green */
+}
+
 /* 姓名标题样式 */
 .name-header {
     margin-bottom: 1rem;
@@ -297,4 +306,8 @@ div[style="border-top: 1px solid #eaeaea; margin-bottom: 16px;"] {
 /* 添加这个类给论文表格 */
 .papers-table {
     margin-top: -16px;  /* 负边距抵消上方表格的间距 */
+}
+
+a.vclab-green {
+    color: #00a651; /* Adjust to match your desired green */
 } 

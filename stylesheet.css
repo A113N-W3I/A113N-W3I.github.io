@@ -14,6 +14,7 @@
   --luojia-green: #0d5d0d;
   /* 添加红色 */
   --pku-red: #880606;
+  --vclab-green: #095b09;
 } 
 
 @font-face {
@@ -172,6 +173,12 @@ span.highlight {
 
 .pku-red {
   color: var(--pku-red);
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.vclab-green {
+  color: var(--vclab-green);
   font-weight: bold;
   font-size: inherit;
 }

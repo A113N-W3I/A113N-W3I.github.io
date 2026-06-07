@@ -52,6 +52,7 @@
 
 <h2>News</h2>
   <ul>
+    <li>[2026.06] <a href="https://huggingface.co/spaces/nvidia/LocateAnything"> 🔥🔥🔥LocateAnything</a> surpassed <strong>100K+ Hugging Face downloads</strong> within one week of release and <button type="button" class="trend-modal-link" onclick="openTrendModal()">🚀 topped the HF model trend</button>! Have a try!</li>
     <li>[2026.02] <strong>One paper</strong> accepted by CVPR 2026 🎉</li>
     <li>[2025.09] <strong>Two papers</strong> accepted by NeurIPS 2025 🎉</li>
     <li>[2025.06] I graduated from <a href="https://www.pku.edu.cn/"><img src="images/pku_logo.png" class="university-logo" alt="PKU Logo"> <span class="pku-red">Peking University</span></a> 🎉</li>
@@ -72,14 +73,14 @@
   <li>
     <div style="margin-top: 15px;"><b>PAM: Perceive Anything - Recognize, Explain, Caption, and Segment Anything in Images and Videos</b></div>
     <div class="author-list" style="margin-top: 5px;"><a style="color: #777;">Weifeng Lin*, <u><b>Xinyu Wei*</b></u>, Ruichuan An*, Tianhe Ren, Tingwei Chen, Renrui Zhang, Ziyu Guo, Wentao Zhang, Lei Zhang, Hongsheng Li</a></div>
-    <div class="paper-desc">Comprehensive region-level understanding: segment, recognize, explain, and caption in images and videos.</div>
+    <div class="paper-desc">Region-level fine-grained understanding with arbitrary kind of visual prompts: segment, recognize, explain, and caption in images and videos.</div>
     <div style="margin-top: 5px;"><i><b>✅ NeurIPS 2025</b></i></div>
     <div style="margin-top: 5px;">[<a href="https://arxiv.org/abs/2506.05302">Paper</a>] [<a href="https://perceive-anything.github.io/">Project Page</a>] [<a href="https://github.com/Perceive-Anything/PAM">Code 🌟279</a>]</div>
   </li>
   <li>
     <div style="margin-top: 15px;"><b>MAVIS: Mathematical Visual Instruction Tuning with an Automatic Data Engine</b></div>
     <div class="author-list" style="margin-top: 5px;"><a style="color: #777;">Renrui Zhang*, <u><b>Xinyu Wei*</b></u>, Dongzhi Jiang, Ziyu Guo, Shicheng Li, Yichi Zhang, Chengzhuo Tong, Jiaming Liu, Aojun Zhou, Bin Wei, Shanghang Zhang, Peng Gao, Chunyuan Li, Hongsheng Li</a></div>
-    <div class="paper-desc">The first specialized LMM for multimodal mathematical problem-solving (CLIP-Math + CoT SFT + DPO).</div>
+    <div class="paper-desc">The first specialized VLM for multimodal math problem-solving (CLIP-Math + CoT SFT + DPO), with automatic focus on key regions in mathematical figures.</div>
     <div style="margin-top: 5px;"><i><b>✅ ICLR 2025</b></i></div>
     <div style="margin-top: 5px;">[<a href="https://arxiv.org/abs/2407.08739">Paper</a>]</div>
   </li>
@@ -98,7 +99,7 @@
   <li>
     <div style="margin-top: 15px;"><b>MICo-150K: A Comprehensive Dataset Advancing Multi-Image Composition</b></div>
     <div class="author-list" style="margin-top: 5px;"><a style="color: #777;"><u><b>Xinyu Wei</b></u>*, Kangrui Cen*, Hongyang Wei, Zhen Guo, Bairui Li, Zeqing Wang, Jinrui Zhang, Lei Zhang</a></div>
-    <div class="paper-desc">A comprehensive dataset for multi-image composition with identity consistency, paired with a strong baseline model Qwen-MICo.</div>
+    <div class="paper-desc">Id-consistent multi-reference image generation demanding fine-grained reference understanding: a dataset, benchmark, and strong baseline model Qwen-MICo.</div>
     <div style="margin-top: 5px;"><i><b>✅ CVPR 2026</b></i></div>
     <div style="margin-top: 5px;">[<a href="https://arxiv.org/abs/2512.07348">Paper</a>] [<a href="https://mico-150k.github.io/">Project Page</a>] [<a href="https://github.com/A113N-W3I/MICo-150K">Code 🌟105</a>]</div>
   </li>
@@ -112,7 +113,7 @@
   <li>
     <div style="margin-top: 15px;"><b>VideoVerse: How Far is Your T2V Generator from a World Model?</b></div>
     <div class="author-list" style="margin-top: 5px;"><a style="color: #777;">Zeqing Wang*, <a style="color: #777;"><u><b>Xinyu Wei</b></u>*, Bairui Li, Zhen Guo, Jinrui Zhang, Hongyang Wei, Keze Wang, Lei Zhang</a></div>
-    <div class="paper-desc">Benchmark evaluating modern T2V models on temporal causality and world knowledge for building world models.</div>
+    <div class="paper-desc">Benchmark evaluating modern T2V models on temporal causality and world knowledge.</div>
     <div style="margin-top: 5px;"><i><b>Under Review</b></i></div>
     <div style="margin-top: 5px;">[<a href="https://arxiv.org/abs/2510.08398">Paper</a>] [<a href="https://www.naptmn.cn/Homepage_of_VideoVerse/">Project Page</a>] [<a href="https://github.com/Zeqing-Wang/VideoVerse">Code 🌟15</a>]</div>
   </li>
@@ -166,8 +167,9 @@
 
 <h2>Hobbies</h2>
   <p>Photography 📸, Body Building 💪, Movie 🎬, Basketball 🏀, Video Games 🎮</p>
-  <p>I read history and philosophy 📖</p>
+  <p>I read history and philosophy <button type="button" class="history-book-button" onclick="revealHistoryNote()" aria-controls="history-note" aria-expanded="false" aria-label="Show history note">📖</button></p>
   <p>I travel all around the world 🌏</p>
+  <p id="history-note" class="history-note" hidden>AI is only a brief spark in modern history; modern history is only a blink in agricultural civilization; agricultural civilization is only a thin slice of Homo sapiens' story; and Homo sapiens are only a chapter in the vast history of life. Every age is connected, every phenomenon has a cause.</p>
 
 <h2>Service</h2>
   <ul>
@@ -184,6 +186,16 @@
   </div>
   <p style="font-size: 0.75em; color: #888; margin-top: 0.6em;">Last updated: May 2026</p>
 </div>
+</div>
+
+<div id="trend-modal" class="trend-modal" role="dialog" aria-modal="true" aria-labelledby="trend-modal-title" aria-hidden="true">
+  <div class="trend-modal-backdrop" onclick="closeTrendModal()"></div>
+  <div class="trend-modal-card">
+    <button type="button" class="trend-modal-close" onclick="closeTrendModal()" aria-label="Close trend screenshot">Close ×</button>
+    <h3 id="trend-modal-title">LocateAnything on Hugging Face Model Trend</h3>
+    <img src="images/LAM_HF_Trend.png" class="trend-modal-image" alt="LocateAnything ranked first on Hugging Face model trend">
+    <p class="trend-modal-caption">Screenshot captured on June 6, 2026.</p>
+  </div>
 </div>
 
 <div class="gray-footer">
@@ -234,6 +246,68 @@ function updateGitHubStars() {
   });
 }
 
+function openTrendModal() {
+  var modal = document.getElementById('trend-modal');
+  modal.classList.add('is-open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+}
+
+function closeTrendModal() {
+  var modal = document.getElementById('trend-modal');
+  modal.classList.remove('is-open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+}
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeTrendModal();
+  }
+});
+
+function readHistoryNoteClicks() {
+  try {
+    return parseInt(localStorage.getItem('historyNoteClicks') || '0', 10) || 0;
+  } catch (error) {
+    return 0;
+  }
+}
+
+function writeHistoryNoteClicks(count) {
+  try {
+    localStorage.setItem('historyNoteClicks', String(count));
+  } catch (error) {}
+}
+
+function updateHistoryBookMetadata(count) {
+  var button = document.querySelector('.history-book-button');
+  if (!button) {
+    return;
+  }
+
+  button.dataset.clickCount = String(count);
+  button.title = 'History note clicks in this browser: ' + count;
+}
+
+function revealHistoryNote() {
+  var note = document.getElementById('history-note');
+  var button = document.querySelector('.history-book-button');
+  var clickCount = readHistoryNoteClicks() + 1;
+
+  writeHistoryNoteClicks(clickCount);
+  updateHistoryBookMetadata(clickCount);
+
+  if (note) {
+    note.hidden = false;
+  }
+
+  if (button) {
+    button.setAttribute('aria-expanded', 'true');
+  }
+}
+
+updateHistoryBookMetadata(readHistoryNoteClicks());
 updateGitHubStars();
 </script>
 </body></html>
